@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bstrap E-commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- added letter-spacing to TravelHolic, added ps to links and customized categories dropdown items -->
+    <div class="container-flex">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-1" style="letter-spacing: 0.1em;" href="#">TravelHolic</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active ps-5" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link ps-5" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ps-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Domestic Travel</a></li> 
+                        <li><a class="dropdown-item" href="#">International Travel</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Personalized Travel Experience</a></li>
+                    </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-5"><strong>Contact Us</strong></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- changed image to caroussel and costumized alt in images -->
+    <div class="container-flex m-0">
+        <div class="row">
+            <div class="col" style="background-color: rgba(0, 0, 0, 0.473);">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://picsum.photos/1200" height="700" class="d-block w-100" alt="somewhere domestic image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/1200" height="700" class="d-block w-100" alt="somewhere international image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/1200" height="700" class="d-block w-100" alt="personalized travel experience image">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container-flex m-0">
+        <div class="row">
+            <div class="card text-center m-0 p-0">
+                <img src="https://picsum.photos/900" height="600" class="card-img" style="background-color:rgba(0, 0, 0, 0.459)" alt="somewhere to go">
+                <div class="card-img-overlay">
+                    <h2 class="card-title display-2" style="color: white;">Go Somewhere</h2>
+                    <p class="card-text fs-4" style="color: white;">There is a place waiting for you!</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- added paragraph -->
+    <div class="container-flex text-center py-5 --bs-secondary-bg">
+        <div class="row">
+            <div class="col">
+                <h2 class="display-2"><strong>Travel Packages</strong></h2>
+                <p>Somewhere is waiting for you</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Styled cards -->
+    <div class="container">
+        <div class="row pb-5">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                        <img src="https://picsum.photos/200" class="card-img-top" alt="Maui landscape">
+                    <div class="card-body">
+                        <h5 class="card-title">Maui</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" style="background-color:cadetblue; border: none">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                        <img src="https://picsum.photos/200" class="card-img-top" alt="Turkey landscape">
+                    <div class="card-body">
+                        <h5 class="card-title">Turkey</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" style="background-color:cadetblue; border: none">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                        <img src="https://picsum.photos/200" class="card-img-top" alt="French Polynesia landscape">
+                    <div class="card-body">
+                        <h5 class="card-title">Bora Bora</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" style="background-color:cadetblue; border: none">More Info</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                        <img src="https://picsum.photos/200" class="card-img-top" alt="Japan landscape">
+                    <div class="card-body">
+                        <h5 class="card-title">Japan</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" style="background-color:cadetblue; border: none">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Changed footer -->
+    <div class="card text-center mt-5" style="border: none; background-color: rgba(189, 188, 188, 0.123)">
+        <div class="card-footer p-3" style="border: none;"></div>
+        <div class="card-body">
+            <h5 class="card-title" style="letter-spacing: 0.3em;">TravelHolic </h5>
+            <p class="card-text" style="letter-spacing: 0.2em;">Go Somewhere</p>
+        </div>
+        <div class="card-footer text-body-terciary">
+            &COPY; TravelHolic all rights reserved. 
+        </div>
+    </div>
+
+    <!-- <div class="container-flex mt-5">
+        <div class="row">
+            <nav class="navbar bg-body-tertiary ps-5 pt-5">
+                <div class="container-fluid">
+                    <span class="navbar-text">
+                    &COPY; TravelHolic all rights reserved. 
+                    </span>
+                </div>
+            </nav>
+        </div>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
